@@ -22,7 +22,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=2">
+    <link rel="stylesheet" href="styles.css?v=4">
   </head>
   <body>
     <header class="site-header">
@@ -223,29 +223,47 @@
           </article>
         </div>
 
-        <div class="project-preview" role="note">
-          <strong>The medical-malpractice enablement suite (built for this application)</strong>
-          <p>
-            Three companion deliverables, grounded in Eve&rsquo;s public materials: an interactive
-            <strong><a href="rise-module.html">medical-chronology training module</a></strong> (Articulate
-            Rise) on building accurate, defensible, settlement-ready chronologies; a
-            <strong>security &amp; implementation guide</strong> (slide deck) on how Eve protects med-mal
-            data; and an <strong>audio overview</strong> on why purpose-built chronologies beat general AI.
-            The <a href="adoption-playbook.html">adoption playbook</a> rounds out the set.
+        <div class="suite-block">
+          <p class="eyebrow">Built for this application</p>
+          <h3 class="suite-title">The medical-malpractice enablement suite</h3>
+          <p class="suite-lede">
+            Three companion deliverables, grounded in Eve&rsquo;s public materials &mdash; the response to
+            the chronology gaps documented above.
           </p>
-          <p style="margin-top:14px">
-            <a class="text-button" href="rise-module.html">Launch the interactive training module &rarr;</a>
-            &nbsp;&middot;&nbsp;
-            <a class="text-button" href="Eve_Security_Slidedeck.pdf">Download the security deck (PDF) &rarr;</a>
-          </p>
-          <div style="margin-top:18px">
-            <p style="margin:0 0 8px; font-weight:600">Audio overview &middot; Scaling plaintiff law firms with Eve</p>
-            <audio controls preload="none" style="width:100%">
-              <source src="Scaling_plaintiff_law_firms_with_Eve_AI.m4a" type="audio/mp4">
-              Your browser doesn&rsquo;t support inline audio &mdash;
-              <a href="Scaling_plaintiff_law_firms_with_Eve_AI.m4a">download the audio overview</a>.
-            </audio>
+
+          <div class="suite-tiles">
+            <a class="suite-tile" href="rise-module.html">
+              <span class="suite-tag">Interactive &middot; Articulate Rise</span>
+              <h4>Medical-chronology training module</h4>
+              <p>A self-paced walkthrough of building accurate, defensible, settlement-ready chronologies
+              in Eve.</p>
+              <span class="suite-action">Launch the module <span aria-hidden="true">&rarr;</span></span>
+            </a>
+
+            <a class="suite-tile" href="Eve_Security_Slidedeck.pdf">
+              <span class="suite-tag">Slide deck &middot; PDF</span>
+              <h4>Security &amp; implementation guide</h4>
+              <p>How a firm&rsquo;s most sensitive med-mal data is protected &mdash; and how a firm gets to
+              value.</p>
+              <span class="suite-action">Download the deck <span aria-hidden="true">&rarr;</span></span>
+            </a>
+
+            <div class="suite-tile suite-tile--audio">
+              <span class="suite-tag">Audio overview &middot; 20 min</span>
+              <h4>Scaling plaintiff firms with Eve</h4>
+              <p>Why purpose-built chronologies beat general AI &mdash; a conversational deep dive.</p>
+              <audio controls preload="none" class="suite-audio">
+                <source src="Scaling_plaintiff_law_firms_with_Eve_AI.m4a" type="audio/mp4">
+                Your browser doesn&rsquo;t support inline audio &mdash;
+                <a href="Scaling_plaintiff_law_firms_with_Eve_AI.m4a">download the audio overview</a>.
+              </audio>
+            </div>
           </div>
+
+          <p class="suite-footnote">
+            The <a href="adoption-playbook.html">adoption playbook</a> rounds out the set. Independent
+            samples from public information; not affiliated with or endorsed by Eve.
+          </p>
         </div>
       </section>
 
