@@ -23,6 +23,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css?v=4">
+    <style>
+      .why .prose { max-width: 760px; }
+      .why .prose p { margin: 0 0 1.15em; color: var(--muted); font-size: 1.05rem; line-height: 1.7; }
+      .why .prose p:last-child { margin-bottom: 0; }
+      .why .prose p.lead { color: var(--ink); font-size: 1.2rem; line-height: 1.6; }
+      .why .prose h3 {
+        margin: 1.8em 0 0.5em;
+        font-size: clamp(1.3rem, 2.2vw, 1.75rem);
+        font-weight: 700;
+        letter-spacing: -0.012em;
+        color: var(--ink);
+      }
+    </style>
   </head>
   <body>
     <header class="site-header">
@@ -36,9 +49,12 @@
 
       <nav class="nav" aria-label="Primary navigation">
         <a href="#about">About</a>
-        <a href="#lifecycle">Onboarding</a>
-        <a href="#samples">Samples</a>
+        <a href="#adoption">Adoption</a>
+        <a href="#onboarding">Onboarding</a>
+        <a href="#experience">Experience</a>
+        <a href="#showcase">Showcase</a>
         <a href="#takeaways">Writing</a>
+        <a href="#why">Why Eve</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
@@ -52,9 +68,15 @@
             For more than a decade, I have worked inside law firms building workflows, training, and
             enabling legal professionals to turn new systems into confident daily practice.
           </p>
+          <p class="lede">
+            Those roles taught me that adoption is driven less by the software than by deep, sustained
+            engagement with a firm&rsquo;s people &mdash; work I now focus on for AI in plaintiff firms,
+            with a point of view shaped by recently leading an adoption pilot at a medical-malpractice
+            practice.
+          </p>
           <div class="hero-actions" aria-label="Primary actions">
-            <a class="button primary" href="#lifecycle">See the approach</a>
-            <a class="button secondary" href="#samples">View a sample plan</a>
+            <a class="button primary" href="#adoption">See the approach</a>
+            <a class="button secondary" href="#experience">See real-world work</a>
           </div>
         </div>
 
@@ -98,14 +120,23 @@
           >
           <div class="section-heading about-copy">
           <p class="eyebrow">About</p>
-          <h2>I have run a plaintiff firm from the inside</h2>
+          <h2>I understand law-firm adoption from the inside</h2>
           <p>
             For more than a decade I ran the daily operations of a boutique plaintiff-side employment and
-            corporate-law firm &mdash; as the only paralegal, with no secretarial support, I handled the
-            practice end to end: intake, client communication, case and matter management, discovery,
-            document production, vendor and software coordination, and billing. I know how a firm actually
-            runs, where the friction lives, and what it takes to get busy legal professionals to trust and
-            adopt a new way of working.
+            corporate-law firm. I handled many elements of the practice end to end: intake, client
+            communication, case and matter management, discovery, document production, vendor and software
+            coordination, and billing. I know how a firm actually runs, where the most significant pain
+            points are, and what it takes to get professionals to trust and adopt a new way of working.
+          </p>
+          <p>
+            Across my career, I have also been part of repeated waves of technology adoption and process
+            improvement. Early on, that meant helping digitize hard-copy files and streamline billing
+            workflows. At a larger firm, it included supporting the implementation of automated billing
+            processes across a roughly 50-attorney practice. In plaintiff-side litigation, it meant working
+            alongside firm leadership and colleagues to evaluate, pilot, and adopt new systems as the
+            practice evolved &mdash; from billing software transitions such as WinVantage to Clio, to
+            multiple litigation-platform changes, including Clio to Casefleet, and the move from PACER-based
+            tracking toward a more automated digital docketing workflow through DocketBird.
           </p>
           <p>
             More recently I have done that adoption work for AI. As a senior litigation paralegal I joined
@@ -120,13 +151,65 @@
         </div>
       </section>
 
-      <section id="lifecycle" class="section">
+      <section id="adoption" class="section">
         <div class="section-heading">
-          <h2>Onboarding across the full customer lifecycle</h2>
+          <p class="eyebrow">Adoption</p>
+          <h2>Adoption is a learning problem, not a software problem</h2>
           <p>
-            How I take a firm from a signed contract to confident daily use &mdash; map the firm&rsquo;s
-            real workflows first, then drive implementation, training, and adoption against clear success
-            metrics.
+            A firm doesn&rsquo;t change how it works because a tool is powerful &mdash; it changes because
+            its people are brought along deliberately. My approach draws on learning theory, adult
+            training, and more than a decade inside firms: meet people in their real workflow, build
+            understanding in the order people actually learn, and earn trust before asking anyone to rely
+            on AI.
+          </p>
+        </div>
+
+        <div class="enablement-cards">
+          <article>
+            <span>01</span>
+            <h4>Start from the workflow</h4>
+            <p>Anchor every rollout in how the firm actually runs a matter &mdash; not a generic feature
+            tour.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h4>Teach the way people learn</h4>
+            <p>Role-based, scaffolded training with practice and reinforcement &mdash; not a one-time demo
+            that fades by Friday.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h4>Protect trust</h4>
+            <p>Coach the review-against-source habit on every AI draft and extraction, so confidence is
+            earned, not assumed.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h4>Measure what matters</h4>
+            <p>Tie adoption to time-to-value, utilization, and an outcome the firm actually cares
+            about.</p>
+          </article>
+        </div>
+
+        <div class="project-preview blueprint-cta">
+          <strong>The adoption playbook</strong>
+          <p>
+            I documented this theory as a repeatable operating model &mdash; five guiding principles, the
+            full lifecycle from signed to advocate, a training library, and an account-health framework for
+            running a whole book of firms.
+            <a href="adoption-playbook.html">Read the adoption playbook &rarr;</a>
+          </p>
+        </div>
+      </section>
+
+      <section id="onboarding" class="section muted">
+        <div class="section-heading">
+          <p class="eyebrow">Onboarding</p>
+          <h2>From signed contract to confident daily use</h2>
+          <p>
+            Onboarding is where the theory meets the calendar. I map the firm&rsquo;s real workflow first,
+            then run a phased rollout &mdash; implementation, role-based training, a controlled go-live, and
+            a review against clear success metrics.
           </p>
         </div>
 
@@ -148,7 +231,7 @@
 
           <div class="blueprint-stage emphasized">
             <div class="stage-header">
-              <h3>Drive adoption, stage by stage</h3>
+              <h3>Run the rollout, stage by stage</h3>
               <p>The work that takes a firm from kickoff to fluent &mdash; and keeps it improving.</p>
             </div>
             <div class="enablement-cards">
@@ -181,56 +264,50 @@
         </div>
 
         <div class="project-preview blueprint-cta">
-          <strong>From approach to program</strong>
+          <strong>A worked 90-day plan</strong>
           <p>
-            I documented this as a structured 90-day framework: stakeholder level-setting, workflow
-            inventory, phased rollout, training, metrics, and the lessons from running one.
-            <a href="adoption-playbook.html">Read the adoption playbook &rarr;</a>
+            I turned this into a concrete plan for a mid-size plaintiff firm: kickoff and configuration,
+            role-based training, a controlled go-live, and a 90-day adoption review &mdash; with owners and
+            the metrics I&rsquo;d track at each stage.
+            <a href="onboarding-plan.html">Read the 90-day onboarding plan &rarr;</a>
           </p>
         </div>
       </section>
 
-      <section id="samples" class="section muted">
+      <section id="experience" class="section">
         <div class="section-heading">
-          <h2>Sample work: a medical-chronology call and response</h2>
+          <p class="eyebrow">Experience</p>
+          <h2>Tested inside a real plaintiff-firm AI pilot</h2>
           <p>
-            This site documents the chronology testing I did during my firm&rsquo;s AI adoption &mdash;
-            where general AI and generic SaaS tools fell short. The deliverables below are the response:
-            how I&rsquo;d onboard a plaintiff med-mal firm to a purpose-built chronology engine. Independent
-            samples from public information; not affiliated with or endorsed by Eve.
+            This part isn&rsquo;t hypothetical. The case study below is drawn from a real AI adoption pilot
+            I worked on as a senior litigation paralegal &mdash; where the medical chronologies were where
+            general-purpose AI broke down most often, and where careful human QC mattered most.
           </p>
         </div>
 
-        <div class="writing-list">
-          <article>
-            <span>The call &middot; Case study</span>
-            <h3><a href="evaluation.html">Evaluating an AI-assisted medical chronology workflow.</a></h3>
-            <p>
-              A worked QC review of an AI-generated chronology: five failure modes, the litigation stakes of
-              each, and the review techniques that catch them &mdash; the testing that shows why
-              chronologies need a tool built for the work.
-            </p>
-            <a class="text-button" href="evaluation.html">Read the case study →</a>
-          </article>
-          <article>
-            <span>The response &middot; Onboarding</span>
-            <h3><a href="onboarding-plan.html">A 90-day onboarding plan for a firm adopting Eve.</a></h3>
-            <p>
-              Kickoff, configuration, training, go-live, and a 90-day review &mdash; with owners,
-              milestones, and the success metrics I&rsquo;d track at each stage.
-            </p>
-            <a class="text-button" href="onboarding-plan.html">Read the plan →</a>
-          </article>
+        <div class="project-preview blueprint-cta">
+          <strong>Case study &middot; Real QC work</strong>
+          <p>
+            A worked review of an AI-generated medical chronology: five failure modes, the litigation
+            stakes of each, and the review techniques that catch them &mdash; the testing that showed why
+            chronologies need a tool built for the work.
+            <a href="evaluation.html">Read the case study &rarr;</a>
+          </p>
+        </div>
+      </section>
+
+      <section id="showcase" class="section muted">
+        <div class="section-heading">
+          <p class="eyebrow">Showcase &middot; Built for this application</p>
+          <h2>The medical-malpractice enablement suite</h2>
+          <p>
+            To show how I&rsquo;d help a plaintiff med-mal firm get value from Eve, I built three companion
+            pieces from Eve&rsquo;s public materials &mdash; an interactive training module, a security and
+            implementation deck, and a podcast-style overview.
+          </p>
         </div>
 
         <div class="suite-block">
-          <p class="eyebrow">Built for this application</p>
-          <h3 class="suite-title">The medical-malpractice enablement suite</h3>
-          <p class="suite-lede">
-            Three companion deliverables, grounded in Eve&rsquo;s public materials &mdash; the response to
-            the chronology gaps documented above.
-          </p>
-
           <div class="suite-tiles">
             <a class="suite-tile" href="rise-module.html">
               <span class="suite-tag">Interactive &middot; Articulate Rise</span>
@@ -243,15 +320,17 @@
             <a class="suite-tile" href="Eve_Security_Slidedeck.pdf">
               <span class="suite-tag">Slide deck &middot; PDF</span>
               <h4>Security &amp; implementation guide</h4>
-              <p>How a firm&rsquo;s most sensitive med-mal data is protected &mdash; and how a firm gets to
-              value.</p>
+              <p>A marketing-style piece for first contact with a firm: how its most sensitive med-mal data
+              is protected, and how it gets to value.</p>
               <span class="suite-action">Download the deck <span aria-hidden="true">&rarr;</span></span>
             </a>
 
             <div class="suite-tile suite-tile--audio">
-              <span class="suite-tag">Audio overview &middot; 20 min</span>
+              <span class="suite-tag">Podcast &middot; 20 min</span>
               <h4>Scaling plaintiff firms with Eve</h4>
-              <p>Why purpose-built chronologies beat general AI &mdash; a conversational deep dive.</p>
+              <p>A different way for a firm to get to know Eve &mdash; a conversational overview synthesized
+              from Eve&rsquo;s website, public discussion, and the founder&rsquo;s own podcast
+              interviews.</p>
               <audio controls preload="none" class="suite-audio">
                 <source src="Scaling_plaintiff_law_firms_with_Eve_AI.m4a" type="audio/mp4">
                 Your browser doesn&rsquo;t support inline audio &mdash;
@@ -261,8 +340,7 @@
           </div>
 
           <p class="suite-footnote">
-            The <a href="adoption-playbook.html">adoption playbook</a> rounds out the set. Independent
-            samples from public information; not affiliated with or endorsed by Eve.
+            Independent samples from public information; not affiliated with or endorsed by Eve.
           </p>
         </div>
       </section>
@@ -303,6 +381,106 @@
             </p>
             <a class="text-button" href="downward-force.html">Read the post →</a>
           </article>
+        </div>
+      </section>
+
+      <section id="why" class="section why">
+        <div class="section-heading">
+          <p class="eyebrow">Why this work</p>
+          <h2>Why legal AI, and why Eve</h2>
+        </div>
+        <div class="prose">
+          <p class="lead">
+            I am drawn to legal AI because I believe it is one of the most important ways to serve
+            innovation in law firms now.
+          </p>
+          <p>
+            For all of the discussion about disruption, the real opportunity is not simply to introduce new
+            technology into legal practice. It is to help firms use it in ways that reduce friction, expand
+            their capacity, improve the quality and consistency of their work, and create more room for the
+            human parts of practice that clients actually need: judgment, communication, strategy, advocacy,
+            and care.
+          </p>
+          <p>
+            Having worked inside firms through multiple waves of technology adoption, I have seen how much
+            potential can be lost when a tool is treated as the solution rather than as part of a larger
+            change process. The most meaningful transformation happens when technology is paired with an
+            understanding of the people doing the work, the information they are trying to manage, and the
+            practical pressures they face every day.
+          </p>
+          <p>
+            That is why I see legal AI not as an abstract category or a temporary trend, but as a chance to
+            help firms build more intelligent, responsive, and human-centered ways of working from the
+            inside out.
+          </p>
+
+          <h3>Why Eve</h3>
+          <p>
+            Eve is especially compelling to me because it is building for a part of legal practice I know
+            intimately: plaintiff-side firms trying to turn overwhelming volumes of information into
+            stronger cases, better client service, and more time for real legal judgment.
+          </p>
+          <p>
+            For years, I have watched attorneys and staff confront the same underlying challenge from inside
+            the firm: how do you make sense of thousands of pages of medical records, case documents,
+            billing materials, communications, and deadlines without burying the people doing the work in
+            repetitive administrative labor? How do you create systems that make a firm more organized, more
+            responsive, and more effective without losing the human judgment that gives the work its value?
+          </p>
+          <p>
+            Medical chronologies are not an abstract use case. They are one of the most consequential and
+            labor-intensive parts of plaintiff-side case development. They shape early case evaluation,
+            damages analysis, expert preparation, mediation strategy, and ultimately the story a firm can
+            tell about a client&rsquo;s injury.
+          </p>
+          <p>
+            This is a problem I have tried to help solve from within firms through process improvement,
+            technical skill, and emerging tools. Seeing Eve approach that problem directly &mdash; and
+            seeing the level of enthusiasm users have expressed about the practical impact on their work
+            &mdash; has made me especially excited about the possibility of contributing to the company.
+          </p>
+          <p>
+            What stands out to me is not simply the promise of producing work product faster. It is the
+            opportunity to build technology around the actual pressure points of plaintiff practice:
+            reviewing complex records, creating usable medical chronologies, supporting intake and case
+            development, drafting materials, and helping firms move work forward without requiring every
+            task to begin from a blank page.
+          </p>
+          <p>
+            I was particularly energized by hearing Eve customer feedback on Trial Lawyer Nation and by the
+            excitement around what the platform could make possible for plaintiff firms. I recognized that
+            reaction. I have seen what it feels like inside a firm when a technology genuinely removes
+            friction, makes difficult work more manageable, and gives attorneys and staff more time to focus
+            on the work only they can do.
+          </p>
+          <p>
+            That kind of impact matters to me because it is not merely operational. Better systems can help
+            firms respond more quickly, organize complex information more effectively, strengthen the
+            development of a case, and spend more time with clients during difficult periods in their lives.
+          </p>
+          <p>
+            I am also drawn to Eve&rsquo;s broader multimodal potential. My background in biomedical
+            visualization has made me deeply interested in how people learn from and make sense of complex
+            information. The future of AI should not be limited to text generation. It should help legal
+            teams work across records, images, transcripts, audio, timelines, and other forms of
+            information in ways that support better understanding and better decisions.
+          </p>
+          <p>
+            For plaintiff firms, this is not merely a technical capability. It can help attorneys,
+            paralegals, case managers, and clients build a clearer shared understanding of complex cases
+            &mdash; especially matters involving extensive medical records, long treatment histories,
+            difficult causation questions, and emotionally significant client experiences.
+          </p>
+          <p>
+            That is what makes Eve especially meaningful to me. It is not merely applying AI to legal work
+            in the abstract. It is building technology around real problems plaintiff firms face every day
+            &mdash; problems I have lived inside, worked to improve, and remain deeply motivated to solve.
+          </p>
+          <p>
+            I would be excited to bring my experience in legal operations, medical-legal communication,
+            workflow adoption, and AI enablement to a company helping firms make technology genuinely useful
+            for the people and clients who depend on it.
+          </p>
         </div>
       </section>
 
